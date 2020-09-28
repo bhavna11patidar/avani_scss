@@ -1,0 +1,53 @@
+@import './variables'; 
+.h1{
+    color:$primary;
+    margin: $marginTB;
+}
+.h2{
+    color:$success;
+    margin: $marginTB;
+}
+.h3{
+    color:$danger;
+    margin: $marginTB;
+}
+
+%btn{
+    border:none;
+    color:$white;
+    padding: 10px 8px;
+    font-weight: bold;
+}
+
+.btn-primary{
+    @extend %btn;
+    background:$primary;
+}
+.btn-danger{
+    @extend %btn;
+    background:$danger;
+}
+.btn-success{
+    @extend %btn;
+    background:$success;
+}
+.container{
+    padding: 20px 15px;
+    background:#DDD;
+    margin-top:20px;
+    .d-flex{
+        display: flex;
+        .card{
+            border:solid 2px black;
+            margin:0px 10px;
+            padding:10px;
+            a{
+                color:$primary;
+                text-decoration: none;
+            }
+            a:hover{
+                color:$success;
+            }
+        }
+    }
+}
