@@ -3,3 +3,34 @@ $danger:rgb(177, 19, 19);
 $success:rgb(3, 235, 3);
 $marginTB:20px 50px;
 $white:#FFF;
+$secondary:gray;
+$dark:#000;
+
+
+@function setTextColor($color){
+    @if(lightness($color)>70){
+        @return $white;
+    }@else{
+        @return $dark;
+    }
+}
+
+@function setTextColor1($color){
+    @if(lightness($color)<70){
+        @return $white;
+    }@else{
+        @return $dark;
+    }
+}
+
+@mixin settingBackgroundColor($color) {
+    background:$color;
+    color:setTextColor1($color);
+}
+
+$spaceAmount:(0,10,20,30,40);
+@each $space in $spaceAmount{
+    .m-#{$space}{
+        margin:#{$space}px;
+    }
+}

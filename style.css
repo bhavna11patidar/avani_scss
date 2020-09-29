@@ -1,10 +1,35 @@
+.m-0 {
+  margin: 0px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.m-30 {
+  margin: 30px;
+}
+
+.m-40 {
+  margin: 40px;
+}
+
 .h1 {
   color: blue;
   margin: 20px 50px;
 }
 
+.h11 {
+  color: #0000b3;
+  margin: 20px 50px;
+}
+
 .h2 {
-  color: green;
+  color: #03eb03;
   margin: 20px 50px;
 }
 
@@ -29,7 +54,7 @@
 }
 
 .btn-success {
-  background: green;
+  background: #03eb03;
 }
 
 .container {
@@ -56,6 +81,19 @@
 }
 
 .container .d-flex .card a:hover {
-  color: green;
+  color: #03eb03;
+}
+
+.text-pro {
+  background-color: gray;
+  padding: 20px;
+  color: #FFF;
+}
+
+.container1 {
+  padding: 30px;
+  text-align: center;
+  background: #000;
+  color: #FFF;
 }
 /*# sourceMappingURL=style.css.map */

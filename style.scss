@@ -1,7 +1,11 @@
 @import './variables'; 
 .h1{
-    color:$primary;
+    color:lighten($primary, 0%);
     margin: $marginTB;
+}
+.h11{
+    color:darken($primary, 15%);
+    margin:$marginTB;
 }
 .h2{
     color:$success;
@@ -51,3 +55,16 @@
         }
     }
 }
+
+.text-pro{
+    background-color:$secondary;
+    padding:20px;
+    color:setTextColor(lighten($secondary,40%));
+}
+
+.container1{
+    padding:30px;
+    text-align: center;
+    @include settingBackgroundColor($dark);
+}
+
